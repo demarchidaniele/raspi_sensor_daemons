@@ -1,11 +1,16 @@
 # Raspi Sensor Daemons
 A set of daemons for reading sensors on a Raspberry PI.
+
 Tested on RaspberryPi 3
 
 Actually sensors supported are:
+
 AS3935 - Franklin Lightning
+
 BMP180 - Barometric Pressure
+
 TX23   - Lacrosse Wind speed and direction
+
 DHT22  - Temperature and Humidity
 
 Each executalbe can run as a foreground process or a daemon.
