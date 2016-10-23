@@ -102,17 +102,14 @@ int main(int argc, char **argv) {
 		else if ((strcmp(argv[i],"--help") == 0) || (strcmp(argv[i],"-?") == 0))
 		{
 			printf("readBMP180 version %f\n", VERSION);
-			printf("Usage: readBMP180 [OPTION]\nRead data from a DMP180 sensor\n");
+			printf("Usage: readBMP180 [OPTION]\nRead data from a BMP180 sensor\n");
 			printf("\t-v,\t\t--verbose\t\tGive detailed messages\n");
 			printf("\t-r [0..10],\t\t--retry[0..10]\t\t\tRetry counter\n");
 			printf("\t-d,\t\t--daemonize\t\tStart daemon with update cycle data refresh\n");
-			printf("\t-uc [5..60],\t--update-cycle [10..60]\tSet update cycle (default 3)\n");
-			printf("\t-s [1..255],\t--samples [1..64]\tSet average samples num(default 1)\n");
+			printf("\t-uc [10..60],\t--update-cycle [10..60]\tSet update cycle (default 10)\n");
+			printf("\t-s [1..64],\t--samples [1..64]\tSet average samples num(default 1)\n");
 			printf("\t-q,\t\t--query-daemon\t\tQuery the daemon\n");
-			printf("\t-pt,\t\t--print-temperature-only\tPrint temperature only\n");
-			printf("\t-pp,\t\t--print-pressure-only\tPrint pressure only\n");
 			printf("\t-pj,\t\t--print-json\t\tJSON output\n");
-
 			printf("\t-?,\t\t--help\t\t\tShow usage information\n\n");
 			exit(0);
 		}
@@ -121,11 +118,6 @@ int main(int argc, char **argv) {
 	if((opt_samples <= 0) || (opt_samples > 64)) {
 		printf("Invalid number of samples\n");
 		return 3;
-	}
-	if ((opt_type != 11) && (opt_type != 22))
-	{
-			printf("Please select a valid sensor type: 11 or 22\n");
-			return 3;
 	}
 
 	if(opt_update_cycle < 10) opt_update_cycle = 10;

@@ -493,8 +493,8 @@ int main (int argc, char *argv[])
 		else if ((strcmp(argv[i],"--help") == 0) || (strcmp(argv[i],"-?") == 0))
 		{
 			printf("Usage: readAS3935 [OPTION]\nRead data from AS3935\n");
-			printf("\t-v, --verbose\t\tGive detailed error messages\n");
-			printf("\t-r w, --wait\t\tWait n second for events if not running as a daemon\n");
+			printf("\t-v, --verbose\t\tGive detailed messages\n");
+			printf("\t-w, --wait\t\tWait n second for events if not running as a daemon\n");
 			printf("\t-d, --daemon\t\tStart daemon core\n");
 			printf("\t-dk, --daemonkill\t\tKill dameon core\n");
 			printf("\t-q,\t\t--query-daemon\t\tQuery the daemon\n");
