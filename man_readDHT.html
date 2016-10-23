@@ -20,7 +20,7 @@
 
     <section class="main-content">
       <h1>
-<a id="raspi-sensor-daemons" class="anchor" href="#raspi-sensor-daemons" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>readBMP Manpage</h1>
+<a id="raspi-sensor-daemons" class="anchor" href="#raspi-sensor-daemons" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>readDHT Manpage</h1>
 
 <p>NAME</p>
 
@@ -57,10 +57,10 @@
 -d, --daemonize
     Start daemon with update cycle data refresh
 
--uc [5..60], --update-cycle [10..60]
-    Set update cycle (default 3)
+-uc [10..60], --update-cycle [10..60]
+    Set update cycle (default 10)
 
--s [1..255], --samples [1..64]
+-s [1..64], --samples [1..64]
     Set average samples num(default 1)
 
 -q, --query-daemon
