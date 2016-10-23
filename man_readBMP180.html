@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Raspi sensor daemons by demarchidaniele</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Raspi sensor daemons</h1>
+      <h2 class="project-tagline"></h2>
+      <a href="https://github.com/demarchidaniele/raspi_sensor_daemons" class="btn">View on GitHub</a>
+      <a href="https://github.com/demarchidaniele/raspi_sensor_daemons/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/demarchidaniele/raspi_sensor_daemons/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="raspi-sensor-daemons" class="anchor" href="#raspi-sensor-daemons" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>readBMP Manpage</h1>
+
+<p>NAME</p>
+
+<pre><code>   readBMP180 - read values from BMP180 
+</code></pre>
+
+<p>SYNOPSIS</p>
+
+<pre><code>   readBMP180 - options
+</code></pre>
+
+<p>DESCRIPTION</p>
+
+<pre><code>   Read values from BMP180 sensor connected to Raspberry PI GPIO, and print information on screen in variuos formats. Also can start a background dameon for continuos reading. Daemon instance can be queried from the same executable with the -q parameter.
+   BMP180 must be connected using I2C interface.
+
+   Mandatory arguments to long options are mandatory for short options too.
+
+-v, --verbose
+    Give detailed messages
+
+-r [0..10], --retry[0..10]
+    Retry counter
+
+-d, --daemonize
+    Start daemon with update cycle data refresh
+
+-uc [10..60], --update-cycle [10..60] 
+    Set update cycle (default 10)
+
+-s [1..255], --samples [1..64]
+    Set average samples num(default 1)
+
+-q, --query-daemon
+    Query the daemon
+
+-pj, --print-json
+    JSON output
+
+-?, --help
+    Show usage information
+</code></pre>
+
+<p>AUTHOR</p>
+
+<pre><code>   Written by Daniele De Marchi.
+</code></pre>
+
+<p>REPORTING BUGS</p>
+
+<pre><code>   Use github &lt;https://github.com/demarchidaniele/raspi_sensor_daemons/issues&gt;
+</code></pre>
+
+<p>COPYRIGHT</p>
+
+<pre><code>   Copyright    ©    2016    Daniele De Marchi     License   GPLv3+:   GNU   GPL   version   3   or   later
+   &lt;http://gnu.org/licenses/gpl.html&gt;.
+   This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.
+</code></pre>
+
+<p>SEE ALSO</p>
+
+<pre><code>   Full documentation at: &lt;https://github.com/demarchidaniele/raspi_sensor_daemons&gt;
+</code></pre>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/demarchidaniele/raspi_sensor_daemons">raspi sensor daemons</a> is maintained by <a href="https://github.com/demarchidaniele">demarchidaniele</a>.</span>
+
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
