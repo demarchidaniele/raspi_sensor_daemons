@@ -101,8 +101,8 @@ int main(int argc, char **argv) {
 			printf("\t-gpon,\t\t--gpon\t\t\tSelect GPIO port to Power ON of the sensor (default none)\n");
 			printf("\t-r [0..10],\t\t--retry[0..10]\t\t\tRetry counter\n");
 			printf("\t-d,\t\t--daemonize\t\tStart daemon with update cycle data refresh\n");
-			printf("\t-uc [5..60],\t--update-cycle [10..60]\tSet update cycle (default 3)\n");
-			printf("\t-s [1..255],\t--samples [1..64]\tSet average samples num(default 1)\n");
+			printf("\t-uc [10..60],\t--update-cycle [10..60]\tSet update cycle (default 10)\n");
+			printf("\t-s [1..64],\t--samples [1..64]\tSet average samples num(default 1)\n");
 			printf("\t-q,\t\t--query-daemon\t\tQuery the daemon\n");
 			printf("\t-psa,\t\t--print-sampling\tPrint sampling of input pin\n");
 			printf("\t-pt,\t\t--print-temperature-only\tPrint temperature only\n");
