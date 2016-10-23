@@ -39,13 +39,19 @@ do a "make install" to install everything on /usr/local/bin
 
 readDHT manpage
 
+
 NAME
+
        readDHT - read values from DHT11 or DHT22 Temperature and Humidity sensor
 
+
 SYNOPSIS
+
        readDHT - options
 
+
 DESCRIPTION
+
        Read values from DHT sensor connected to Raspberry PI GPIO, and print information on screen in variuos formats. Also can start a background dameon for continuos reading. Daemon instance can be queried from the same executable with the -q parameter.
        Parameter -gpon is useful to recover a bad reading or a critical stop of the sensor. Due to the low consumption, gpon pin can be used to power the sensor.
 
@@ -94,30 +100,43 @@ DESCRIPTION
 		Show usage information
 
 AUTHOR
+
        Written by Daniele De Marchi.
 
+
 REPORTING BUGS
-       Us github <https://github.com/demarchidaniele/raspi_sensor_daemons/issues>
+
+       Use github <https://github.com/demarchidaniele/raspi_sensor_daemons/issues>
+
 
 COPYRIGHT
+
        Copyright    ©    2016    Daniele De Marchi     License   GPLv3+:   GNU   GPL   version   3   or   later
        <http://gnu.org/licenses/gpl.html>.
        This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.
 
+
 SEE ALSO
+
        Full documentation at: <https://github.com/demarchidaniele/raspi_sensor_daemons>
 
 -------------------------------
 
 readAS3935 manpage
 
+
 NAME
+
        readAS3935 - read values from AS3935 
 
+
 SYNOPSIS
+
        readAS3935 - options
 
+
 DESCRIPTION
+
        Read values from AS3935 sensor connected to Raspberry PI GPIO, and print information on screen in variuos formats. Also can start a background dameon for continuos reading. Daemon instance can be queried from the same executable with the -q parameter.
        AS3935 must be connected using SPI interface and SPI_CE0 as enable.
        During startup readAS3935 perform the proper tuning of antenna and intial noise floor level.
@@ -150,17 +169,24 @@ DESCRIPTION
 		Show usage information
 
 AUTHOR
+
        Written by Daniele De Marchi.
 
+
 REPORTING BUGS
-       Us github <https://github.com/demarchidaniele/raspi_sensor_daemons/issues>
+
+       Use github <https://github.com/demarchidaniele/raspi_sensor_daemons/issues>
+
 
 COPYRIGHT
+
        Copyright    ©    2016    Daniele De Marchi     License   GPLv3+:   GNU   GPL   version   3   or   later
        <http://gnu.org/licenses/gpl.html>.
        This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.
 
+
 SEE ALSO
+
        Full documentation at: <https://github.com/demarchidaniele/raspi_sensor_daemons>
 
 -------------------------------
@@ -168,12 +194,17 @@ SEE ALSO
 readBMP180 manpage
 
 NAME
+
        readBMP180 - read values from BMP180 
 
+
 SYNOPSIS
+
        readBMP180 - options
 
+
 DESCRIPTION
+
        Read values from BMP180 sensor connected to Raspberry PI GPIO, and print information on screen in variuos formats. Also can start a background dameon for continuos reading. Daemon instance can be queried from the same executable with the -q parameter.
        BMP180 must be connected using I2C interface.
 
@@ -203,18 +234,26 @@ DESCRIPTION
 	-?, --help
 		Show usage information
 
+
 AUTHOR
+
        Written by Daniele De Marchi.
 
+
 REPORTING BUGS
-       Us github <https://github.com/demarchidaniele/raspi_sensor_daemons/issues>
+
+       Use github <https://github.com/demarchidaniele/raspi_sensor_daemons/issues>
+
 
 COPYRIGHT
+
        Copyright    ©    2016    Daniele De Marchi     License   GPLv3+:   GNU   GPL   version   3   or   later
        <http://gnu.org/licenses/gpl.html>.
        This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.
 
+
 SEE ALSO
+
        Full documentation at: <https://github.com/demarchidaniele/raspi_sensor_daemons>
 
 -------------------------------
@@ -222,12 +261,17 @@ SEE ALSO
 readTX23 manpage
 
 NAME
+
        readTX23 - read values from LaCrosse TX23 Wind Sensor 
 
+
 SYNOPSIS
+
        readTX23 - options
 
+
 DESCRIPTION
+
        Read values from LaCrosse TX23 sensor connected to Raspberry PI GPIO, and print information on screen in variuos formats. Also can start a background dameon for continuos reading. Daemon instance can be queried from the same executable with the -q parameter.
        LaCrosse TX23 seems to suffer of bitrate instability that could cause reading errors.
        This instability is avoided by the auto bitrate adapative algorithm.
@@ -290,16 +334,23 @@ DESCRIPTION
 
 
 AUTHOR
+
        Written by Daniele De Marchi.
 
+
 REPORTING BUGS
-       Us github <https://github.com/demarchidaniele/raspi_sensor_daemons/issues>
+
+       Use github <https://github.com/demarchidaniele/raspi_sensor_daemons/issues>
+
 
 COPYRIGHT
+
        Copyright    ©    2016    Daniele De Marchi     License   GPLv3+:   GNU   GPL   version   3   or   later
        <http://gnu.org/licenses/gpl.html>.
        This is free software: you are free to change and redistribute it.  There is NO WARRANTY, to the extent permitted by law.
 
+
 SEE ALSO
+
        Full documentation at: <https://github.com/demarchidaniele/raspi_sensor_daemons>
        LaCrosse TX23 protocol descrition <https://www.john.geek.nz/2012/08/la-crosse-tx23u-anemometer-communication-protocol>
