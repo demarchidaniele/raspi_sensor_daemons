@@ -13,11 +13,11 @@ TX23           - Lacrosse Wind speed and direction
 
 DHT11 / DHT22  - Temperature and Humidity
 
-Each executalbe can run as a foreground process or a daemon.
+Each executable can run as a foreground process or a daemon.
 
 If lauched as a foreground process, the software query the sensor for a while and print the values on exit.
 
-If launched as a daemon, the same executalbe must be started twice: one for running the dameon and a second time for asking data to the background process.
+If launched as a daemon, the same executable must be started twice: one for running the dameon and a second time for query data to the background process.
 
 -------------------------------
 
