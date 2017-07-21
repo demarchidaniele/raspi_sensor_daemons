@@ -12,7 +12,7 @@ clean :
 	rm -f readDHT readTX23 readBMP180 readAS3935
 
 install:
-	cp ./readDTH /usr/local/bin
+	cp ./readDHT /usr/local/bin
 	cp ./readTX23 /usr/local/bin
 	cp ./readBMP180 /usr/local/bin
 	cp ./readAS3935 /usr/local/bin
