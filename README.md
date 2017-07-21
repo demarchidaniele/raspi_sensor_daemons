@@ -19,6 +19,10 @@ If lauched as a foreground process, the software query the sensor for a while an
 
 If launched as a daemon, the same executable must be started twice: one for running the dameon and a second time for query data to the background process.
 
+This software depend from the BCM2835 library.
+Follow the next link for Download and installation information:
+http://www.airspayce.com/mikem/bcm2835/
+
 -------------------------------
 
 Compilation
